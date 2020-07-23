@@ -40,7 +40,10 @@ h2 {
     width: 780px;
     margin: 0 auto;
 }
-
+.title__span {
+    font-size: 1.5rem;
+    color: #520611;
+}
 .yellow {
     color: #fcdb00;
 }
