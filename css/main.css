@@ -80,6 +80,10 @@ h2 {
     width: 70px;
     height: 70px;
 }
+.video {
+    max-width: 100%;
+    width: 400px;
+}
 .offer {
     margin-top:117px;
 }
