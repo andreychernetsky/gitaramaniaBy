@@ -12,42 +12,87 @@
     <meta name="robots" content="index, follow">
     <meta name="google" content="notranslate">
     <meta name="format-detection" content="telephone=no">
-    <link rel="icon" type="image/png" href="favicon_16x16.png" sizes="16x16">
-	<link rel="icon" type="image/png" href="favicon_32x32.png" sizes="32x32">
-	<link rel="icon" type="image/png" href="favicon_96x96.png" sizes="96x96">
-    <meta name="description" content="Обучение игре на гитаре в Бобруйске">
-    <meta property="og:image" content="zastava.jpg">
+    <meta name="description" content="">
+    <meta property="og:image" content="">
     
-    <title>Студия игры на гитаре и не только в Бобруйске</title>
+    <title>gitaramania | Home</title>
     <!-- паршал head -->
 </head>
 
 <body>
     <div class="page">
-        <header class="header">header</header>
-        <aside class="sidebar">
+        <header class="header">
+            <div class="header__left">
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a class="nav__link" href="index.html">Главная</a>
+                        </li>
+                        <li class="nav__item">
+                            <a  class="nav__link" href="">обучение игре на гитаре</a>
+                            <ul class="subnav">
+                                <li class="subnav__item">
+                                    <a href="" class="subnav__link">Статьи</a>
+                                </li>
+                                <li class="subnav__item">
+                                    <a href="" class="subnav__link">Статьи</a>
+                                </li>
+                                <li class="subnav__item">
+                                    <a href="" class="subnav__link">Статьи</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="">Создание сайтов</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href=""></a>
+                        </li>
+                    </ul>
+                </nav>
+                <button class="butger" type="button" id="sidebarToggle">
+                    <span>Открыть навигацию</span>
+                </button>
+            </div>
+            <div class="header__right">
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a class="nav__link" href="">Навигация</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="">Выйти</a>
+                        </li>
+                    </ul>
+                </nav>
+                <form class="search" action="search.html" method="get">
+                    <input class="search__input" type="text" placeholder="Поиск по блогу">
+                </form>
+            </div>
+        </header>
+        <aside class="sidebar" id="sidebar">
             <div class="sidebar__header">
-                <img class="sidebar__img" src="./assets/images/midi.jpg" alt="">
+                <img class="sidebar__img" src="./../assets/images/midi.jpg" alt="">
             </div>
             <div class="sidebar__content">
                 <div class="profile">
-                    <img class="profile__avatar" src="./assets/images/iam.jpg" alt="avatar" >
+                    <img class="profile__avatar" src="./../assets/images/iam.jpg" alt="avatar" >
                     <div class="profile__supervisor">Рководитель студии:</div>   
                     <div class="profile__name">Чернецкий Андрей Александрович</div>
                     <ul class="social">
                         <li class="social__item">
                             <a href="#" class="social__link">
-                                <img src="./assets/images/svg/instagram.svg" alt="" class="social__icon">
+                                <img src="./../assets/images/svg/instagram.svg" alt="" class="social__icon">
                             </a>
                         </li>
                         <li class="social__item">
                             <a href="https://vk.com/id459488160" class="social__link" target="_blank">
-                                <img src="./assets/images/svg/vk.svg" alt="" class="social__icon">
+                                <img src="./../assets/images/svg/vk.svg" alt="" class="social__icon">
                             </a>
                         </li>
                         <li class="social__item">
                             <a href="https://www.youtube.com/channel/UCf0lyVh5MWFgqo5jWBIupvA?view_as=subscriber" class="social__link" target="_blank">
-                                <img src="./assets/images/svg/icons8-youtube-play.svg" alt="" class="social__icon">
+                                <img src="./../assets/images/svg/icons8-youtube-play.svg" alt="" class="social__icon">
                             </a>
                         </li>
                     </ul>
@@ -76,6 +121,34 @@
                 </div>
             </div>
            
+            <nav class="nav nav--mobile">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a class="nav__link" href="index.html">Главная</a>
+                    </li>
+                    <li class="nav__item">
+                        <a  class="nav__link has-subnav" href="">обучение игре на гитаре</a>
+                        <ul class="subnuv">
+                            <li class="subnuv__item">
+                                <a href="" class="subnuv__link">Статьи</a>
+                            </li>
+                            <li class="subnuv__item">
+                                <a href="" class="subnuv__link">Статьи</a>
+                            </li>
+                            <li class="subnuv__item">
+                                <a href="" class="subnuv__link">Статьи</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="">Создание сайтов</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href=""></a>
+                    </li>
+                </ul>
+            </nav>
+           </div>
             <div class="sidebar__footer">
                 <a href="" class="btn btn--blue">написать мне</a>
                 <!-- <button class="btn btn--red" ></button> -->
@@ -83,8 +156,28 @@
         </aside>
         <main class="main">
             <div class="container">
-                
-                разработка блога
+                <div class="stories">
+                    <div class="stories__item" data-modal="story-modal">
+                      <img class="stories__preview" src="./assets/images/stories/1.jpg" alt="">
+                      <div class="stories__title">Показательный урок</div>
+                      <time class="stories__date" datetime="2022-09-12 14:50">12.09.2022</time>
+                    </div>
+                    <div class="stories__item" data-modal="story-modal">
+                        <img class="stories__preview" src="./assets/images/stories/2.jpg" alt="">
+                        <div class="stories__title">Настольная игра</div>
+                        <time class="stories__date" datetime="2022-09-12 14:50">12.09.2022</time>
+                      </div>
+                      <div class="stories__item" data-modal="story-modal">
+                        <img class="stories__preview" src="./assets/images/stories/3.jpg" alt="">
+                        <div class="stories__title">Создание сайтов</div>
+                        <time class="stories__date" datetime="2022-09-12 14:50">12.09.2022</time>
+                      </div>
+                      <div class="stories__item" data-modal="story-modal">
+                        <img class="stories__preview" src="./assets/images/stories/4.jpg" alt="">
+                        <div class="stories__title">Создание сайтов</div>
+                        <time class="stories__date" datetime="2022-09-12 14:50">12.09.2022</time>
+                      </div>
+                </div>
                 
             </div>
         </main>
