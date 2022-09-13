@@ -1,1 +1,1 @@
-console.log("file 1"),console.log("file 2");
+!function(){const e=document.getElementById("sidebarToggle"),t=(document.getElementById("sidebar"),document.getElementById("page")),s=document.body;function d(){s.classList.remove("show-sidebar"),document.querySelector(".page__mask").remove()}e.addEventListener("click",(e=>{s.classList.contains("show-sidebar")?d():function(){let e=document.createElement("div");e.classList.add("page__mask"),e.addEventListener("clcik",d),t.appendChild(e),s.classList.add("show-sidebar")}()}))}(),console.log("file 2");

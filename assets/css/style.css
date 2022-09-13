@@ -371,6 +371,16 @@ body {
     line-height: 1.4;
 }
 
+body.no-scroll {
+    overflow: hidden;
+}
+
+@media screen and (max-width: 991px) {
+    body.show-sidebar {
+        overflow: hidden;
+    }
+}
+
 *,
 *::before,
 *:after {
@@ -378,7 +388,7 @@ body {
 }
 
 li {
-    list-style-type: none;
+    list-style: none;
 }
 
 .header {
@@ -404,12 +414,24 @@ li {
     width: 60%;
 }
 
+@media screen and (max-width: 991px) {
+    .header__left {
+        width: 40%;
+    }
+}
+
 .header__right {
     width: 40%;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: end;
     justify-content: flex-end;
+}
+
+@media screen and (max-width: 991px) {
+    .header__right {
+        width: 60%;
+    }
 }
 
 .sidebar {
@@ -485,6 +507,78 @@ li {
     -ms-flex-pack: center;
     justify-content: center;
     padding: 0 2rem;
+}
+
+.burger {
+    display: none;
+    width: 3rem;
+    height: 2rem;
+    padding: 0;
+    background: none;
+    border: none;
+    font-size: 0;
+    color: transparent;
+    position: absolute;
+    top: 50%;
+    left: 1.5rem;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.burger:before, .burger:after,
+.burger span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+}
+
+.burger:before, .burger:after {
+    content: "";
+    transition: -webkit-transform 0.2s linear;
+    transition: transform 0.2s linear;
+    transition: transform 0.2s linear, -webkit-transform 0.2s linear;
+}
+
+.burger:before {
+    top: 0;
+}
+
+.burger:after {
+    bottom: 0;
+}
+
+.burger span {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    transition: opacity 0.2s linear;
+}
+
+.show-sidebar .burger span {
+    opacity: 0;
+}
+
+.show-sidebar .burger:before, .show-sidebar .burger:after {
+    top: 50%;
+}
+
+.show-sidebar .burger:before {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.show-sidebar .burger:after {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+@media screen and (max-width: 991px) {
+    .burger {
+        display: block;
+    }
 }
 
 .search {
@@ -585,6 +679,13 @@ li {
     max-width: 70rem;
     padding: 0 5rem;
     margin: 0 auto;
+}
+
+@media screen and (max-width: 575px) {
+    .container {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
 }
 
 .main {
