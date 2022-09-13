@@ -29,7 +29,7 @@
                             <a class="nav__link" href="index.html">Главная</a>
                         </li>
                         <li class="nav__item">
-                            <a  class="nav__link" href="">обучение игре на гитаре</a>
+                            <a  class="nav__link has-subnav" href="">обучение игре на гитаре</a>
                             <ul class="subnav">
                                 <li class="subnav__item">
                                     <a href="" class="subnav__link">Статьи</a>
@@ -50,9 +50,9 @@
                         </li>
                     </ul>
                 </nav>
-                <button class="butger" type="button" id="sidebarToggle">
+                <!-- <button class="butger" type="button" id="sidebarToggle">
                     <span>Открыть навигацию</span>
-                </button>
+                </button> -->
             </div>
             <div class="header__right">
                 <nav class="nav">
@@ -72,27 +72,27 @@
         </header>
         <aside class="sidebar" id="sidebar">
             <div class="sidebar__header">
-                <img class="sidebar__img" src="./assets/images/midi.jpg" alt="">
+                <img class="sidebar__img" src="./../assets/images/midi.jpg" alt="">
             </div>
             <div class="sidebar__content">
                 <div class="profile">
-                    <img class="profile__avatar" src="./assets/images/iam.jpg" alt="avatar" >
+                    <img class="profile__avatar" src="./../assets/images/iam.jpg" alt="avatar" >
                     <div class="profile__supervisor">Рководитель студии:</div>   
                     <div class="profile__name">Чернецкий Андрей Александрович</div>
                     <ul class="social">
                         <li class="social__item">
                             <a href="#" class="social__link">
-                                <img src="./assets/images/svg/instagram.svg" alt="" class="social__icon">
+                                <img src="./../assets/images/svg/instagram.svg" alt="" class="social__icon">
                             </a>
                         </li>
                         <li class="social__item">
                             <a href="https://vk.com/id459488160" class="social__link" target="_blank">
-                                <img src="./assets/images/svg/vk.svg" alt="" class="social__icon">
+                                <img src="./../assets/images/svg/vk.svg" alt="" class="social__icon">
                             </a>
                         </li>
                         <li class="social__item">
                             <a href="https://www.youtube.com/channel/UCf0lyVh5MWFgqo5jWBIupvA?view_as=subscriber" class="social__link" target="_blank">
-                                <img src="./assets/images/svg/icons8-youtube-play.svg" alt="" class="social__icon">
+                                <img src="./../assets/images/svg/icons8-youtube-play.svg" alt="" class="social__icon">
                             </a>
                         </li>
                     </ul>
@@ -120,7 +120,10 @@
                     </ul>
                 </div>
             </div>
-           
+            <div class="sidebar__footer">
+                <a href="" class="btn btn--blue">написать мне</a>
+                <!-- <button class="btn btn--red" ></button> -->
+            </div>
             <nav class="nav nav--mobile">
                 <ul class="nav__list">
                     <li class="nav__item">
@@ -149,10 +152,7 @@
                 </ul>
             </nav>
            </div>
-            <div class="sidebar__footer">
-                <a href="" class="btn btn--blue">написать мне</a>
-                <!-- <button class="btn btn--red" ></button> -->
-            </div>
+           
         </aside>
         <main class="main">
             <div class="container">
@@ -179,6 +179,72 @@
                       </div>
                 </div>
                 
+                <!-- add post -->
+                <div class="add-post">
+                  <form action="" class="add-post__form">
+                    <textarea class="add-post__textarea" name="post-text" id="" placeholder="напишите что-нибудь" data-autoresize></textarea>
+                    <div class="add-post__form-action">
+                      <label class="add-post__file" for="add-post-file">
+                        <input type="file" id="add-post-file">
+                      </label>
+                      <button class="add-post__send" type="submit">
+                        отправить
+                      </button>
+                    </div>
+                  </form>
+                </div>
+                <div class="post">
+                  <div class="post__content">
+                    <p class="post__description">Длительность нот. Основные размеры. Семь нот. Цифровка нот. Ступени.</p>
+                  </div>
+                  <div class="post__footer">
+                    <ul class="post__data">
+                      <li class="post__data-item">
+                        <time datetime="2022-09-13 9:51">13.09.2022</time>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                
+                <article class="post">
+                 <div class="post__header post__header--preview ">
+                  <a href="post.html">
+                    <img class="post__preview" src="./assets/images/stories/1.jpg" alt="">
+                  </a>
+                 </div>
+                 <div class="post__content">
+                   <h2 class="post__title">
+                    <a href="post.html">Обучение игре на гитаре</a>
+                   </h2>
+                   <p class="post__description">
+                    С самых первых занятий будем изучать различные известные мелодии, сочинять через импровизацию свои мелодии. На занятиях вы изучите основные аккорды и их последовательности, легко овладеете нотной грамотой и научитесь создавать свои собственные мелодии
+                   </p>
+                 </div>
+                 <div class="post__footer">
+                  <ul class="post__data-item">
+                    <li class="post__data-item">
+                      <time datetime="2022-09-213 19:20">13.09.2022</time>
+                    </li>
+                    <li class="post__data-item">
+                      <a href="#">Игра по нотам</a>
+                    </li>
+                  </ul>
+                  <a href="post.html" class="post__read">читать</a>
+                 </div>
+                </article>
+                
+                <article class="post">
+                 <div class="post__header">
+                  <div class="embed">
+                    <iframe  src="https://www.youtube.com/embed/kWPFYYBYnlY?list=PL-C9Gd_H9vKjLL0w-vILwxJxwFRaheMEL" title="Первое звено 6 - 8 лет Гитара +Игра" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+                 </div>
+                 <div class="post__content">
+                  <div class="post__title post__title--open">
+                    <a href="post.html" class="">Первое звено 6-8 лет</a>
+                  </div>
+                 </div>
+                </article>
             </div>
         </main>
     </div>
