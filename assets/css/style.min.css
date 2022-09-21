@@ -553,7 +553,7 @@ li {
 
 .subnav {
   display: none;
-  width: 16.5rem;
+  width: 18rem;
   padding: 0.5rem 0;
   background: rgb(30, 23, 217);
   border-radius: 0 0 5px 5px;
@@ -572,7 +572,12 @@ li {
   }
 }
 
+.subnav__item {
+  min-width: 17rem;
+}
+
 .subnav__link {
+  text-align: center;
   display: block;
   padding: 0.41rem 1.2rem;
   font-size: 1.8rem;
