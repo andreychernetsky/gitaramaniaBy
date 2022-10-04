@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
-
     <meta charset="UTF-8">
     <link rel="stylesheet" href="assets/css/style.min.css">
     
@@ -13,14 +11,13 @@
     <meta name="google" content="notranslate">
     <meta name="format-detection" content="telephone=no">
     <meta name="description" content="">
-    <meta property="og:image" content="">
     
-    <title></title>
-    <!-- паршал head -->
+    <title>Text Page</title>
 </head>
-
 <body>
+
     <div class="page" id="page">
+        <!-- Header -->
         <header class="header">
             <div class="header__left">
                 <nav class="nav">
@@ -29,67 +26,66 @@
                             <a class="nav__link" href="index.html">Главная</a>
                         </li>
                         <li class="nav__item">
-                            <a  class="nav__link has-subnav" href="">обучение игре на гитаре</a>
+                            <a class="nav__link  has-subnav" href="#">Статьи</a>
+        
                             <ul class="subnav">
-                                <li class="subnav__item">
-                                    <a href="https://mandelstamdavid.ru/music_theory/seventh_chords?ysclid=l8blj35icw635379778" class="subnav__link" target="_blank">Септаккорды</a>
+                                <li>
+                                    <a class="subnav__link" href="#">Создание сайтов</a>
                                 </li>
-                                <!-- <li class="subnav__item">
-                                    <a href="" class="subnav__link">Статьи</a>
+                                <li>
+                                    <a class="subnav__link" href="#">Интернет-маркетинг</a>
                                 </li>
-                                <li class="subnav__item">
-                                    <a href="" class="subnav__link">Статьи</a>
-                                </li> -->
-                            </ul>
-                        </li>
-                        <li class="nav__item">
-                            <a class="nav__link has-subnav" href="">Создание сайтов</a>
-                            <ul class="subnav">
-                                <li class="subnav__item">
-                                    <a href="https://vk.com/id459488160?z=article_edit459488160_150083" class="subnav__link" target="_blank">Робототехнический набор «RoboLab Education»</a>
-                                </li>
-                                <li class="subnav__item">
-                                    <a href="https://vk.com/@459488160-innovacionnoe-reshenie-v-obrazovanii" class="subnav__link" target="_blank">Набор конструктора MST серии «Класс»</a>
-                                </li>
-                                <li class="subnav__item">
-                                    <a href="" class="subnav__link">Статьи</a>
+                                <li>
+                                    <a class="subnav__link" href="#">Продвижение видео</a>
                                 </li>
                             </ul>
                         </li>
                         <li class="nav__item">
-                            <a class="nav__link" href="https://vk.com/@-189091276-poleznyi-material-dlya-razmyshleniya" target="_blank">Настольная игра</a>
+                            <a class="nav__link" href="text.html">Обо мне</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="text.html">Реклама</a>
                         </li>
                     </ul>
                 </nav>
+                
                 <button class="burger" type="button" id="sidebarToggle">
                     <span>Открыть навигацию</span>
                 </button>
             </div>
+        
             <div class="header__right">
                 <nav class="nav">
                     <ul class="nav__list">
                         <li class="nav__item">
-                            <a class="nav__link" href="">Навигация</a>
+                            <a class="nav__link" href="profile.html">Профиль</a>
                         </li>
                         <li class="nav__item">
-                            <a class="nav__link" href="">Выйти</a>
+                            <a class="nav__link" href="#">Выйти</a>
                         </li>
                     </ul>
                 </nav>
+        
                 <form class="search" action="search.html" method="get">
                     <input class="search__input" type="text" placeholder="Поиск по блогу">
                 </form>
             </div>
         </header>
+
+        <!-- Sidebar -->
         <aside class="sidebar" id="sidebar">
             <div class="sidebar__header">
                 <img class="sidebar__img" src="./../assets/images/midi.jpg" alt="">
             </div>
+        
             <div class="sidebar__content">
                 <div class="profile">
                     <img class="profile__avatar" src="./../assets/images/iam.jpg" alt="avatar" >
-                    <div class="profile__supervisor">Рководитель студии:</div>   
-                    <div class="profile__name">Чернецкий Андрей Александрович</div>
+                    <div class="profile__header">
+                        <div class="profile__supervisor">Руководитель студии:</div>   
+                        <div class="profile__name">Чернецкий Андрей Александрович</div>
+                    </div>
+        
                     <ul class="social">
                         <li class="social__item">
                             <a href="#" class="social__link">
@@ -107,66 +103,87 @@
                             </a>
                         </li>
                     </ul>
-                    <div class="profile__text">Основные направления студии экспериментального обучения</div>
         
-                    <ul class="profile__list">
-                        <li class="profile__item">
-                            <a href="https://andreychernetsky.github.io/gitaraMania/app/index.html" class="profile__link" target="_blank">Обучение игре на гитаре</a>
-                        </li>
-                        <li class="profile__item">
-                            <a href="https://vk.com/public189846411" class="profile__link" target="_blank">Настольная игра</a>
-                        </li>
-                        <li class="profile__item">
-                            <a href="https://andreychernetsky.github.io/codePrjgramSite/app/index.html" class="profile__link" target="_blank">Создание сайтов</a>
-                        </li>
-                        <li class="profile__item">
-                            <a href="https://andreychernetsky.github.io/painting/" class="profile__link" target="_blank">Цифровое рисование</a>
-                        </li>
-                        <li class="profile__item">
-                            <a href="https://vk.com/@459488160-programma-kursa" class="profile__link" target="_blank">Миди-технологии</a>
-                        </li>
-                        <li class="profile__item">
-                            <a href="https://vk.com/@459488160-pohody-vyhodnogo-dnya" class="profile__link"  target="_blank">Палатки выходного дня</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="sidebar__footer">
-                <a href="https://vk.com/id459488160" class="btn btn--blue" target="_blank">написать мне</a>
-                <!-- <button class="btn btn--red" ></button> -->
-            </div>
-            <nav class="nav nav--mobile">
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a class="nav__link" href="index.html">Главная</a>
+                    <div class="profile__text">Основные направления студии экспериментального обучения</div>
+                </div><!-- /.profile -->
+                
+                <ul class="profile__list">
+                    <li class="profile__item">
+                        <a href="https://andreychernetsky.github.io/gitaraMania/app/index.html" class="profile__link" target="_blank">Обучение игре на гитаре</a>
                     </li>
-                    <li class="nav__item">
-                        <a  class="nav__link has-subnav" href="">обучение игре на гитаре</a>
-                        <ul class="subnuv">
-                            <li class="subnuv__item">
-                                <a href="" class="subnuv__link">Статьи</a>
-                            </li>
-                            <li class="subnuv__item">
-                                <a href="" class="subnuv__link">Статьи</a>
-                            </li>
-                            <li class="subnuv__item">
-                                <a href="" class="subnuv__link">Статьи</a>
-                            </li>
-                        </ul>
+                    <li class="profile__item">
+                        <a href="https://vk.com/public189846411" class="profile__link" target="_blank">Настольная игра</a>
                     </li>
-                    <li class="nav__item">
-                        <a class="nav__link" href="">Создание сайтов</a>
+                    <li class="profile__item">
+                        <a href="https://andreychernetsky.github.io/codePrjgramSite/app/index.html" class="profile__link" target="_blank">Создание сайтов</a>
                     </li>
-                    <li class="nav__item">
-                        <a class="nav__link" href=""></a>
+                    <li class="profile__item">
+                        <a href="https://andreychernetsky.github.io/painting/" class="profile__link" target="_blank">Цифровое рисование</a>
+                    </li>
+                    <li class="profile__item">
+                        <a href="https://vk.com/@459488160-programma-kursa" class="profile__link" target="_blank">Миди-технологии</a>
+                    </li>
+                    <li class="profile__item">
+                        <a href="https://vk.com/@459488160-pohody-vyhodnogo-dnya" class="profile__link"  target="_blank">Палатки выходного дня</a>
                     </li>
                 </ul>
-            </nav>
-           </div>
-           
+        
+                <nav class="nav  nav--mobile">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a class="nav__link" href="index.html">Главная</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link  has-subnav" href="#">Основные направления студии</a>
+        
+                            <ul class="subnav">
+                                <li>
+                                    <a class="subnav__link" href="https://andreychernetsky.github.io/gitaraMania/app/index.html" target="_blank">Гитара</a>
+                                </li>
+                                <li>
+                                    <a class="subnav__link" href="https://vk.com/public189846411" target="_blank">Настольная Игра</a>
+                                </li>
+                                <li>
+                                    <a class="subnav__link" href="https://andreychernetsky.github.io/codePrjgramSite/app/index.html" target="_blank">Программирование сайтов</a>
+                                </li>
+                                <li>
+                                    <a class="subnav__link" href="https://andreychernetsky.github.io/painting/" target="_blank">Цифровое рисование</a>
+                                </li>
+                                <li>
+                                    <a class="subnav__link" href="https://vk.com/@459488160-programma-kursa">Миди-технологии</a>
+                                </li>
+                                <li>
+                                    <a class="subnav__link" href="https://vk.com/@459488160-pohody-vyhodnogo-dnya" target="_blank">Палатки выходного дня</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="text.html">Портфолио</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="text.html">Сотрудничество</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="profile.html">Профиль</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Выйти</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div><!-- /.sidebar__content -->
+        
+            <div class="sidebar__footer">
+                <a class="btn  btn--red" href="works.html">Мои курсы</a>
+                <button class="btn  btn--blue" type="button" data-modal="contact-modal">Написать мне</button>
+            </div>
         </aside>
+
+        <!-- Main -->
         <main class="main">
             <div class="container">
+                
+                
                 <article class="post">
                     <div class="post__actions">
                         <a href="index.html">вернуться назад</a>
@@ -176,17 +193,12 @@
                     </div>
                 
                     <div class="post__header  post__header--open">
-                        <h1 class="post__title  post__title--mb0">Открытый урок</h1>
+                        <h1 class="post__title  post__title--mb0">Как я сходил на FrontEnd Conf 2021</h1>
                     </div>
-                    <p>
-                        <span class="fr-video">
-                            <iframe src="https://www.youtube.com/embed/CvEttNvty0U" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </span>
-                    </p>
+                
                     <div class="post__content">
                         <div class="post__text">
                             <div class="post__desc"><span class="post__text-span">Педагог:</span>Чернецкий А.А.</div>
-                            <img src="" alt="">
                             <div class="post__desc"><span class="post__text-span">Объединение по интересам:</span>"gitaramania.by"</div>
                             <div class="post__desc"><span class="post__text-span">Тема:</span>Основные Ступени лада</div>
                             <div class="post__desc"><span class="post__text-span">Форма занятий:</span>групповое</div>
@@ -212,12 +224,16 @@
                                 <div class="post__desc"><span class="post__text-span-cursiv">Воспитательные:</span></div>
                                 <ol class="post__ol">
                                     <li class="post__item">Воспитывать творческое сотрудничество педагога и учащихся;</li>
-                                    <li class="post__item">способствовать освоению культурных ценностей человечества,
-                                        формированию;</li>
-                                    <li class="post__item">художественного вкуса, сценической культуры.</li>
+                                    <li class="post__item">развивать технические навыки и способы мышления для их улучшения;</li>
+                                    <li class="post__item">развивать музыкальный слух;</li>
+                                    <li class="post__item">образное музыкальное мышление.</li>
+                                  
                                 </ol>
-                                <div class="post__desc"><span class="post__text-span">Место занятия в программе:</span></div>
-                                <div class="post__desc"><span class="post__text-span">Тема раздела:</span>«Основные ступени лада»</div>
+                            <p>
+                                <span class="fr-video">
+                                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/tyE1HwVXPXU" title="основные направления студии экспериментального обучения в Бобруйске" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </span>
+                            </p>
                         </div><!-- /.post__text -->
                     </div><!-- /.post__content -->
                 </article><!-- /.post -->
@@ -226,9 +242,103 @@
         </main>
     </div>
 
-    <footer>Footer</footer>
 
+    <div class="modal" id="story-modal-1">
+        <div class="modal__content  modal__content--story">
+            <video class="modal__video" src="" poster="https://placehold.it/420x580"></video>
+        </div>
+    </div>
+    <div class="modal" id="story-modal-2">
+        <div class="modal__content  modal__content--story">
+            <video class="modal__video" src="" poster="https://placehold.it/420x580"></video>
+        </div>
+    </div>
+    <div class="modal" id="story-modal-3">
+        <div class="modal__content  modal__content--story">
+            <video class="modal__video" src="" poster="https://placehold.it/420x580"></video>
+        </div>
+    </div>
+    <div class="modal" id="story-modal-4">
+        <div class="modal__content  modal__content--story">
+            <video class="modal__video" src="" poster="https://placehold.it/420x580"></video>
+        </div>
+    </div>    <div class="modal" id="contact-modal">
+        <div class="modal__content  modal__content--contact">
+            <button class="modal__close" type="button">
+                <img src="assets/images/close.svg" alt="Закрыть">
+            </button>
+    
+            <form class="form" action="/" method="post">
+                <div class="form__group  form__group--md">
+                    <input class="form__control" type="text" placeholder="Ваше имя">
+                    <span class="form__line"></span>
+                </div>
+    
+                <div class="form__group  form__group--md">
+                    <input class="form__control" type="email" placeholder="Ваш e-mail">
+                    <span class="form__line"></span>
+                </div>
+    
+                <div class="form__group  form__group--md">
+                    <textarea class="form__control  form__control--textarea" placeholder="Текст сообщения"></textarea>
+                    <span class="form__line"></span>
+                </div>
+    
+                <div class="form__footer">
+                    <div class="form__group  form__group--md">
+                        <button class="btn  btn--blue  btn--rounded  btn--sm" type="submit">Отправить</button>
+                    </div>
+                </div>
+            </form>
+    
+            <ul class="modal__footer">
+                <li>
+                    e-mail: <a href="mailto:info@mywebsite.ru">info@mywebsite.ru</a>
+                </li>
+                <li>
+                    тел: <a href="tel:+94323285622">+943-232-856-22</a>
+                </li>
+            </ul>
+        </div><!-- /.modal__content -->
+    </div><!-- /.modal -->
+    <div class="modal">
+        <div class="modal__content">
+            <button class="modal__close" type="button">
+                <img src="assets/images/close.svg" alt="Закрыть">
+            </button>
+    
+            <ul class="social">
+                <li class="social__item">
+                    <a class="social__link" href="#">
+                        <img src="assets/images/share/facebook.svg" alt="">
+                    </a>
+                </li>
+    
+                <li class="social__item">
+                    <a class="social__link" href="#">
+                        <img src="assets/images/share/twitter.svg" alt="">
+                    </a>
+                </li>
+    
+                <li class="social__item">
+                    <a class="social__link" href="#">
+                        <img src="assets/images/share/vk.svg" alt="">
+                    </a>
+                </li>
+    
+                <li class="social__item">
+                    <a class="social__link" href="#">
+                        <img src="assets/images/share/copy.svg" alt="">
+                    </a>
+                </li>
+            </ul>
+    
+        </div><!-- /.modal__content -->
+    </div><!-- /.modal -->
+    
+    
+
+    <!-- JS -->
     <script src="assets/js/app.js"></script>
 </body>
-
 </html>
