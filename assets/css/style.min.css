@@ -718,10 +718,12 @@ a {
   display: flex;
   justify-content: center;
   align-items: center; }
-  @media screen and (max-width: 991px) {
+  /* @media screen and (max-width: 991px) {
     .social {
-      display: none; } }
-
+      display:block; } 
+      
+    } */
+  
 .social__item {
   margin: 0 .75rem; }
 
