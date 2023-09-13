@@ -332,7 +332,7 @@ a {
 .social {
   display: flex;
   justify-content: space-between;
-  margin-top: 25%;
+  margin-top: 50px;
 }
 .social__item {
   padding-left: 15px;
@@ -431,7 +431,7 @@ a {
     text-align: center;
   }
 }
-@media(max-width:940px){
+@media(max-width:540px){
   .descriptionOfdirections__subtitle {
     text-align: center;
     font-size: 20px;
