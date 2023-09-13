@@ -384,7 +384,7 @@ a {
     justify-content: center;
   }
   .menu__btn {
-    display: flex;
+    display:none;
   }
   .logo,
   .menu__btn {
@@ -392,8 +392,9 @@ a {
     z-index: 15;
     margin: 0 35px;
   }
-  .menu__list {
-    position: absolute;
+   .menu__list {
+    display: none;
+    /* position: absolute;
     z-index: 5;
     background: #151515;
     flex-direction: column;
@@ -406,11 +407,11 @@ a {
     padding-top: 80px;
     height: 100vh;
     transform: translateX(-130%);
-    transition: transform .3s ease;
+    transition: transform .3s ease; */
   }
   .menu__list.menu__list--active {
     transform: translateX(-3%);
-  }
+  } */
 }
 @media (max-width:1056px) {
   .footer__inner {
@@ -447,6 +448,9 @@ a {
   }
 }
 @media(max-width:540px){
+  .header__inner {
+    justify-content: center;
+  }
   .button {
 
     padding: 1.12em 2.1em;
