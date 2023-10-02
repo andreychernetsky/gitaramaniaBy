@@ -336,6 +336,9 @@ a {
   font-size: 18px;
   padding-top: 30px;
 }
+.phone--header{
+  color: #fff;
+}
 .social {
   display: flex;
   justify-content: space-between;
@@ -452,7 +455,6 @@ a {
     justify-content: center;
   }
   .button {
-
     padding: 1.12em 2.1em;
     font-size: 0.8rem;
   }
