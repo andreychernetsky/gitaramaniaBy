@@ -107,7 +107,7 @@ a {
   padding-bottom: 20px;
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
 }
 .menu {
   max-width: 100%;
@@ -226,47 +226,38 @@ a {
   font-weight: 600;
   text-align:center;
 }
-
 .socialDesk {
   display: flex;
   justify-content: center;
   margin: 25px 0;
 }
-
 .socialDesk__item {
   padding-left: 25px;
 }
-
 .socialDesk__link {
   display: block;
   font-size: 18px;
 }
-
 .socialDesk__icon-vk {
   width: 45px;
   height: 45px;
   fill: #0066ff;
 }
-
 .socialDesk__icon-vk:hover {
   fill: #0847a5;
 }
-
 .socialDesk__icon-yotube {
   width: 45px;
   height: 45px;
   fill: #e00b0b;
 }
-
 .socialDesk__icon-yotube:hover {
   fill: #960202
 }
-
 .socialDesk__icon-instagram {
   width: 45px;
   height: 45px;
 }
-
 .derection__link {
   margin: 1.2rem 0;
   font-size: 1.2rem;
@@ -276,12 +267,10 @@ a {
   font-weight: 600;
   transition: .2s linear;
 }
-
 .derection__link:hover {
   color: #c50c0c;
   ;
 }
-
 .button {
   display: block;
   vertical-align: top;
@@ -417,6 +406,11 @@ a {
   } 
 }
 @media (max-width:1056px) {
+  .header__inner {
+    justify-content: center;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
   .footer__inner {
     flex-direction: column;
     align-items: center;
@@ -427,6 +421,7 @@ a {
   }
 }
 @media(max-width:940px){
+  
   .descriptionOfdirections__content {
     flex-direction: column;
     align-items: center;
@@ -453,7 +448,13 @@ a {
 @media(max-width:540px){
   .header__inner {
     justify-content: center;
+    padding-top: 0;
+    padding-bottom: 0;
   }
+  .swiper-button-prev,
+.swiper-button-next{
+  display: none;
+}
   .button {
     padding: 1.12em 2.1em;
     font-size: 0.8rem;
